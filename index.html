@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Cymetria</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+
+<body>
+    <form action="#" method="post">
+
+        <!-- Campo para el nombre -->
+        <div class="form-group">
+            <label class="label" for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Ingrese su nombre completo" pattern="[A-Za-z]{10}">
+        </div>
+
+        <!-- Campo para el email -->
+        <div class="form-group">
+            <label class="label" for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Ej: username@correo.co">
+        </div>
+
+        <!-- campo para radio buttoon -->
+        <p>¿Qué curso estás tomando en Cymetria?</p>
+        <div class="form-group">
+            <div class="radio-group">
+                <input type="radio" id="SQL-SERVER" name="curso" value="SQL-SERVER" required>
+                <label for="SQL-SERVER">
+                    SQL-SERVER
+                </label>
+            </div>
+
+            <div class="radio-group">
+                <input type="radio" id="Frontend" name="curso" value="Frontend" required>
+                <label for="Frontend">
+                    Frontend
+                </label>
+            </div>
+
+            <div class="radio-group">
+                <input type="radio" id="FullStack" name="curso" value="FullStack" required>
+                <label for="FullStack">
+                    FullStack
+                </label>
+            </div>
+        </div>
+
+        <!-- campo para los check -->
+        <p>¿Cuales lenguajes de programación te gustaría seguir aprendiendo?</p>
+        <div class="from-group">
+            <div class="check-group">
+                <input type="checkbox" id="aprendiendo" name="aprendiendo" value="Python">
+                <label for="aprendiendo"></label>
+                Python
+            </div>
+
+            <div class="check-group">
+                <input type="checkbox" id="aprendiendo" name="aprendiendo" value="JavaScript">
+                <label for="aprendiendo"></label>
+                JavaScript
+            </div>
+
+            <div class="check-group">
+                <input type="checkbox" id="aprendiendo" name="aprendiendo" value=".Net">
+                <label for="aprendiendo"></label>
+                .Net
+            </div>
+
+            <div class="check-group">
+                <input type="checkbox" id="aprendiendo" name="aprendiendo" value="Java">
+                <label for="aprendiendo"></label>
+                Java
+            </div>
+
+            <div class="check-group">
+                <input type="checkbox" id="aprendiendo" name="aprendiendo" value="Nodejs">
+                <label for="aprendiendo"></label>
+                Nodejs
+            </div>
+
+            <div class="check-group">
+                <input type="checkbox" id="aprendiendo" name="aprendiendo" value="PHP">
+                <label for="aprendiendo"></label>
+                PHP
+            </div>
+        </div>
+
+        <!-- Campo para los Botones -->
+        <div class="botones">
+            <button class="button-cancelar" type="reset">Cancelar</button>
+            <button class="button-enviar" type="submit">Enviar</button>
+        </div>
+
+    </form>
+
+
+
+</body>
+
+</html>

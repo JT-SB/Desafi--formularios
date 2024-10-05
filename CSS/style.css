@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilos para el cuerpo del html */
+body {
+    font-family: "Noto Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    background-color: #D9D9D9;
+}
+
+/* estilos para todo el formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 90px 98px;
+    gap: 32px;
+    font-size: 16px;
+    color: #666;
+}
+
+/* estilos para los bloques del formulario */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.label{
+    font-size: 12px;
+}
+
+input {
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.radio-group{
+    display: flex;
+    gap: 16px;
+    padding: 16px;
+}
+.check-group{
+    display: flex;
+    gap: 10px;
+    padding: 16px;
+}
+
+/* estilos para los botones del formularuio */
+.botones {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px ; 
+}
+
+.button-cancelar {
+    text-decoration: none;
+    color: #5D5FEF;
+    border: 1px solid #5D5FEF;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 16px;
+    width: 150px;        
+}
+
+.button-enviar {
+    color:white;
+    background-color: #5D5FEF;
+    border: 1px solid #5D5FEF;
+    border-radius: 5px;
+    width: 150px;
+    padding: 16px;   
+}
+
+.button-enviar:hover{
+    background-color: #0004ff;
+}
+
+.button-cancelar:hover {
+    background-color:#D9D9D9;
+}
+
+/* mediaQuerys */
+@media screen and (max-width: 620px) {
+    form {
+        width: 90%;
+    }
+}
+
